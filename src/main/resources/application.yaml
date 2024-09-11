@@ -1,0 +1,14 @@
+spring:
+  application:
+    name:
+      RestApi
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydatabase
+    password: secret
+    username: myuser
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    change-log: db/migration/db.changelog-master.yaml
+    enabled: true
+  jpa:
+    open-in-view: false
